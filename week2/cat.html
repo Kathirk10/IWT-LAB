@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog - [Bookstore Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .book {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr 1fr auto;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+            .book img {
+                max-width: 100px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+        .book-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .book-author {
+            margin-bottom: 5px;
+        }
+
+        .book-publication {
+            margin-bottom: 5px;
+        }
+
+        .book-price {
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            text-align: center;
+        }
+
+            .add-to-cart button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                .add-to-cart button:hover {
+                    background-color: #45a049;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book Catalog</h2>
+
+        <!-- Book 1 -->
+        <div class="book">
+            <img src="file:///C:/Users/kathi/Desktop/week2/1.jpg" alt="Book 1">
+            <div class="book-details">
+                <div class="book-title">The Story of Tata: 1868 to 2021</div>
+                <div class="book-author">by Peter Casey</div>
+                <div class="book-publication">Published by Penguin Books India </div>
+            </div>
+            <div class="book-price">Rs.455</div>
+            <div class="add-to-cart">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book">
+            <img src="2.jpg" alt="Book 2">
+            <div class="book-details">
+                <div class="book-title">The Comfort Book </div>
+                <div class="book-author">by Matt Haig </div>
+                <div class="book-publication">Published by Canongate Books </div>
+            </div>
+            <div class="book-price">Rs.499</div>
+            <div class="add-to-cart">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Book 3 (Add more books as needed) -->
+        <div class="book">
+            <img src="3.jpg" alt="Book 3">
+            <div class="book-details">
+                <div class="book-title">THE SILENT PATIENT</div>
+                <div class="book-author">by lex Michaelides </div>
+                <div class="book-publication">Published by Orion</div>
+            </div>
+            <div class="book-price">Rs.1000</div>
+            <div class="add-to-cart">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more books here -->
+
+    </div>
+</body>
+</html>

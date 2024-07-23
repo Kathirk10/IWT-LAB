@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .cart-item {
+            display: grid;
+            grid-template-columns: auto 2fr 1fr auto;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+            .cart-item img {
+                max-width: 100px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+        .cart-item-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-item-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-author {
+            margin-bottom: 5px;
+        }
+
+        .cart-item-price {
+            font-weight: bold;
+        }
+
+        .cart-item-remove {
+            text-align: center;
+        }
+
+            .cart-item-remove button {
+                background-color: #f44336;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                .cart-item-remove button:hover {
+                    background-color: #d32f2f;
+                }
+
+        .cart-total {
+            margin-top: 20px;
+            font-size: 20px;
+            text-align: right;
+        }
+
+            .cart-total span {
+                font-weight: bold;
+            }
+
+        .checkout-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            margin-top: 20px;
+        }
+
+            .checkout-btn:hover {
+                background-color: #45a049;
+            }
+
+        .empty-cart {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Your Shopping Cart</h2>
+
+        <!-- Cart Items -->
+        <div class="cart-item">
+            <img src="1.jpg" alt="Book 1">
+            <div class="cart-item-details">
+                <div class="cart-item-title">The Story of Tata: 1868 to 2021</div>
+                <div class="cart-item-author"> Peter Casey</div>
+                <div class="cart-item-price">Rs.455</div>
+            </div>
+            <div class="cart-item-remove">
+                <button>Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="3.jpg" alt="Book 2">
+            <div class="cart-item-details">
+                <div class="cart-item-title">THE SILENT PATIENT</div>
+                <div class="cart-item-author">by lex Michaelides</div>
+                <div class="cart-item-price">Rs.1000</div>
+            </div>
+            <div class="cart-item-remove">
+                <button>Remove</button>
+            </div>
+        </div>
+
+        <!-- Add more items as needed -->
+        <!-- Total -->
+        <div class="cart-total">
+            Total: <span>Rs.1455</span>
+        </div>
+
+        <!-- Checkout Button -->
+        <button class="checkout-btn">Proceed to Checkout</button>
+
+        <!-- Empty Cart Message (display if cart is empty) -->
+        <!-- <div class="empty-cart">
+            Your cart is empty.
+        </div> -->
+    </div>
+</body>
+</html>
